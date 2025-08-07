@@ -39,4 +39,5 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- include "helicone.env.nextPublicBetterAuth" . | nindent 12 }}
 # TODO: remove from helm once Jawn no longer requires (feature is deprecated)
 {{- include "helicone.env.csbApiKey" . | nindent 12 }}
+{{- include "helicone.env.isHeliconeCloud" . | nindent 12 }}
 {{- end }}
