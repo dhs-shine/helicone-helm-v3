@@ -224,7 +224,7 @@ ClickHouse URL with scheme and port eg http://localhost:18123
 
 {{- define "helicone.env.isHeliconeCloud" -}}
 - name: IS_HELICONE_CLOUD
-  value: false
+  value: "false"
 {{- end }}
 
 {{- define "helicone.env.dbName" -}}
